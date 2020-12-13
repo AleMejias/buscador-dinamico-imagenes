@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- ESTILOS DE GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rasa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ESTILOS DE FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- ESTILOS CSS INTERNOS -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Buscador Dinamico-Imagenes</title>
+  </head>
+  <body>
+    <!-- Contenedor principal -->
+    <div class="contenedor-principal">
+      <header>
+        <div class="logo">
+          <h1>Alejandro Mejias</h1>
+          <p>Desarrollador Web Jr</p>
+        </div>
+        <!-- Buscador -->
+        <form action="#">
+          <input type="text" class="barra-busqueda" placeholder="Buscar" />
+        </form>
+
+        <!-- Barra de Navegacion -->
+        <nav class="categorias" id="categorias">
+          <a href="#">Todos</a>
+          <a href="#">Animales</a>
+          <a href="#">Ciudades</a>
+          <a href="#">Paisajes</a>
+        </nav>
+      </header>
+
+      <!-- CONTENEDOR DE IMAGENES -->
+      <section class="contenedor-imagenes" id="contenedor-imagenes">
+        <!-- Se iran cargando las imagenes dinamicamente con Javascript y usando Template Literals -->
+      </section>
+
+      <section class="imagen-expandida" id = "imagen-expandida">
+          <div class="contenedor-img" id = "contenedor-img">
+<!--             <button id ="cerrar-ventana"></button><i class="fas fa-times"></i></button> -->
+            <!-- AQUI SE PINTARA DESDE JAVASCRIPT LA IMAGEN QUE SEA CLICKEADA POR EL USUARIO -->
+          </div>
+          <p class="descripcion" id = "descripcion">Descripcion para la imagen expandida</p>
+      </section>
+
+      <!-- PIE DE PAGINA -->
+      <footer class="contenedor">
+        <div class="pie-pagina">
+          <div class="contenedor-icono">
+            <a href="https://github.com/AleMejias" target = "_blank"class="github">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="contenedor-icono">
+            <a href="http://www.linkedin.com/in/alejandro-mejias" target="_blank" class="linkedin">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <p class="creador">Alejandro Mejias-Desarrollador Web Jr &copy;</p>
+      </footer>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="datos.json"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
